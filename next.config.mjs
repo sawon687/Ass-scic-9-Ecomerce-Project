@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
-};
+  experimental: {
+    turbo: false, // Turbopack বন্ধ
+  },
+}
 
-export default nextConfig;
+export default nextConfig
+

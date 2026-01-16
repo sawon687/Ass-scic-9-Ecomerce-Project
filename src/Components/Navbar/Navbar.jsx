@@ -1,5 +1,6 @@
 'use client'
 import React from 'react';
+import Navlink from '../Newsletter/Navlink/Navlink';
 const Navbar = () => {
     return (
         <div className='fixed top-0 left-0 z-50 w-full'>
@@ -32,12 +33,15 @@ const Navbar = () => {
 
     {/* <!-- MENU --> */}
     <ul className="hidden md:flex items-center gap-8 font-medium">
-      <li className="hover:text-green-600 cursor-pointer">Home <span className="text-green-600">+</span></li>
-      <li className="hover:text-green-600 cursor-pointer">About Us</li>
+      
+          <Navlink to={'/'} name={'Home'} ></Navlink>
+          <Navlink to={'/AllFruits'} name={'All Fruits'}></Navlink>
+          <Navlink to={'/About'} name={'About Us'}></Navlink>
+          <Navlink to={'/Contact'} name={'Contact'}></Navlink>
       <li className="hover:text-green-600 cursor-pointer">Service <span className="text-green-600">+</span></li>
       <li className="hover:text-green-600 cursor-pointer">Pages <span className="text-green-600">+</span></li>
       <li className="hover:text-green-600 cursor-pointer">Blog <span className="text-green-600">+</span></li>
-      <li className="hover:text-green-600 cursor-pointer">Contact</li>
+    
     </ul>
     {/* <!-- RIGHT ACTIONS --> */}
     <div className="flex items-center gap-5">

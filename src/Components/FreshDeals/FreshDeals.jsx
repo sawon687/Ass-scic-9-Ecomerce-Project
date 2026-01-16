@@ -42,7 +42,7 @@ const FreshDeals = () => {
                 <p className="text-white mb-4">
                   Organic And Fresh <br /> Vegetables
                 </p>
-                <button className="bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-lg font-medium transition">
+                <button className="bg-green-500 hover:bg-green-800 text-white px-6 py-2 rounded-full font-medium transition">
                   Shop Now
                 </button>
               </div>

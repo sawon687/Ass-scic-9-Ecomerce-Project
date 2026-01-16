@@ -1,5 +1,6 @@
 'use client';
 
+import Link from "next/link";
 import { FaStar } from "react-icons/fa";
 
 const FoodCard = ({ fruit }) => {
@@ -58,7 +59,7 @@ const FoodCard = ({ fruit }) => {
       {/* Content */}
       <div className="px-5 py-4 text-center">
         <span className="text-xs font-semibold text-green-600 tracking-wide uppercase">
-          Organic
+           {fruit.isOrganic===true?'organic':'not-organic'}
         </span>
 
         <h2 className="text-lg font-semibold text-gray-800 mt-1">
@@ -77,8 +78,8 @@ const FoodCard = ({ fruit }) => {
           ))}
         </div>
 
-        {/* Button */}
-        <button
+        {/* Link */}
+        <button 
           className="
             mt-4
             w-full
@@ -94,7 +95,9 @@ const FoodCard = ({ fruit }) => {
             active:scale-95
           "
         >
-          Add to Cart
+
+          <Link href={`/AllFruits/${fruit?._id}`}>  Add to Cart</Link>
+         
         </button>
       </div>
     </div>

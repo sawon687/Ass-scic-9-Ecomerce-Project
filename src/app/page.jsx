@@ -1,6 +1,7 @@
 import AboutUsComPany from "@/Components/AboutUsComPany/AboutUsComPany";
 import Banner from "@/Components/Banner/Banner";
 import FreshDeals from "@/Components/FreshDeals/FreshDeals";
+import Newsletter from "@/Components/Newsletter/Newsletter";
 import OrganicFruits from "@/Components/OrganicProduct/OrganicFruits";
 import Services from "@/Components/ServicesOur/Services";
 
@@ -14,6 +15,7 @@ export default function Home() {
        <FreshDeals></FreshDeals>
        <Services></Services>
        <OrganicFruits></OrganicFruits>
+       <Newsletter></Newsletter>
        
     </div>
   );

@@ -14,7 +14,18 @@ export async function POST(req) {
 
 export async function GET(req) {
 
-    const  result = await fruitscoll.find().toArray()
+     const {searchParams}=new URL(req.url)
+
+     console.log('searchParam',searchParams)
+     const type=searchParams.get('type')
+
+    let query={}
+     if(type==='organic')
+     {
+        query={isOrganic:true}
+     }
+
+    const  result = await fruitscoll.find(query).toArray()
    
     return Response.json(result)
     

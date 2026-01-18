@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { FaLongArrowAltRight } from "react-icons/fa";
 const AboutUsComPany = () => {
@@ -27,13 +28,13 @@ const AboutUsComPany = () => {
           </p>
 
           <div className="flex gap-4">
-            <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 flex items-center gap-2 rounded-full font-medium transition">
+            <Link href={'/About'} className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 flex items-center gap-2 rounded-full font-medium transition">
              <span> DISCOVER MORE</span> <FaLongArrowAltRight />
-            </button>
+            </Link>
 
-            <button className="border border-green-500 text-green-500 hover:bg-green-500 hover:text-white px-6 py-3 rounded-full font-medium transition">
+            <Link href={'/Contact'} className="border border-green-500 text-green-500 hover:bg-green-500 hover:text-white px-6 py-3 rounded-full font-medium transition">
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
 

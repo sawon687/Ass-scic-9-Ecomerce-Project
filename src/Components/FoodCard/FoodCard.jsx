@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { FaStar } from "react-icons/fa";
-
+import { CiShoppingCart } from "react-icons/ci";
 const FoodCard = ({ fruit }) => {
  
   return (
@@ -54,13 +54,17 @@ const FoodCard = ({ fruit }) => {
             pointer-events-none
           "
         />
+         {fruit.isOrganic && (
+  <span className="text-xs absolute top-[5%] left-[5%] rounded-full py-2 px-3 font-semibold bg-green-500 text-white tracking-wide uppercase">
+    100% Organic
+  </span>
+)}
+
       </div>
 
       {/* Content */}
       <div className="px-5 py-4 text-center">
-        <span className="text-xs font-semibold text-green-600 tracking-wide uppercase">
-           {fruit.isOrganic===true?'organic':'not-organic'}
-        </span>
+       
 
         <h2 className="text-lg font-semibold text-gray-800 mt-1">
           {fruit?.name}
@@ -96,7 +100,7 @@ const FoodCard = ({ fruit }) => {
           "
         >
 
-          <Link href={`/AllFruits/${fruit?._id}`}>  Add to Cart</Link>
+          <Link href={`/AllFruits/${fruit?._id}`} className="flex justify-center items-center gap-3"><CiShoppingCart size={25} className="font-bold" /> <span>Add to Cart</span></Link>
          
         </button>
       </div>

@@ -16,8 +16,7 @@ body {
 
 .brand-wrap {
   width: 320px;
-  height: 100px;
-  background: #0a7a0a; /* green */
+  height: 80px;
   clip-path: polygon(
     0 0,
     85% 0,

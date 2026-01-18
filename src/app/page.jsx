@@ -4,6 +4,7 @@ import FreshDeals from "@/Components/FreshDeals/FreshDeals";
 import Newsletter from "@/Components/Newsletter/Newsletter";
 import OrganicFruits from "@/Components/OrganicProduct/OrganicFruits";
 import Services from "@/Components/ServicesOur/Services";
+import WhyChooseUs from "@/Components/WhyChooseUs/WhyChooseUs";
 
 
 
@@ -15,7 +16,9 @@ export default function Home() {
        <FreshDeals></FreshDeals>
        <Services></Services>
        <OrganicFruits></OrganicFruits>
+        <WhyChooseUs></WhyChooseUs>
        <Newsletter></Newsletter>
+      
        
     </div>
   );

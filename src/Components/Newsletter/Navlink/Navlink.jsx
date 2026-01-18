@@ -11,7 +11,7 @@ const Navlink = ({ name, to }) => {
       <Link
         href={to}
         className={`${
-          isActive ? "text-green-500 font-bold" : "hover:text-green-600"
+          isActive ? "text-green-500 font-bold border-b-3 pb-2 border-green-500" : "hover:text-green-600"
         } cursor-pointer`}
       >
         {name}

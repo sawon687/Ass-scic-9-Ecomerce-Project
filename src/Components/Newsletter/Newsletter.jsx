@@ -16,53 +16,75 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="py-20 bg-green-50 flex justify-center items-center">
-      <div className="bg-white rounded-3xl shadow-2xl p-10 max-w-xl w-full flex flex-col items-center text-center relative overflow-hidden">
+   <section className="py-24 bg-gradient-to-r from-green-600 via-green-500 to-lime-400">
+  <div className="max-w-6xl mx-auto px-6">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-        {/* Optional decorative fruits background */}
-        <div className="absolute -top-10 -left-10 w-32 h-32 bg-green-200 rounded-full opacity-40 blur-3xl"></div>
-        <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-yellow-200 rounded-full opacity-40 blur-3xl"></div>
-
-        {/* Title */}
-        <h2 className="text-3xl font-bold text-green-800 mb-3">
-          🍓 Subscribe to our Newsletter
+      {/* LEFT CONTENT */}
+      <div className="text-white">
+        <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+          Subscribe for Fresh <br /> Fruits & Offers 🍎
         </h2>
-        <p className="text-gray-600 mb-6">
-          Get the latest updates about organic fruits, fresh vegetables, and exclusive deals.
+
+        <p className="text-green-100 max-w-lg mb-8 leading-relaxed">
+          Get weekly updates about fresh organic fruits, seasonal discounts,
+          and healthy lifestyle tips directly to your inbox.
         </p>
 
-        {/* Form */}
-        <form
-          onSubmit={handleSubmit}
-          className="w-full flex flex-col sm:flex-row gap-4"
-        >
-          <div className="flex flex-1 items-center border border-gray-300 rounded-2xl px-4 py-2 focus-within:ring-2 focus-within:ring-green-400 transition">
-            <FaMailBulk className="text-gray-400 mr-2" size={20} />
-            <input
-              type="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full outline-none text-gray-700 placeholder-gray-400 bg-transparent"
-              required
-            />
-          </div>
+        {/* FEATURES */}
+        <ul className="space-y-4 text-green-50">
+          <li className="flex items-center gap-3">
+            <span className="w-3 h-3 bg-white rounded-full"></span>
+            Weekly fresh fruit updates
+          </li>
+          <li className="flex items-center gap-3">
+            <span className="w-3 h-3 bg-white rounded-full"></span>
+            Exclusive subscriber discounts
+          </li>
+          <li className="flex items-center gap-3">
+            <span className="w-3 h-3 bg-white rounded-full"></span>
+            100% organic & farm fresh
+          </li>
+        </ul>
+      </div>
+
+      {/* RIGHT FORM */}
+      <div className="bg-white rounded-3xl shadow-2xl p-10 relative overflow-hidden">
+
+        {/* Decorative Circle */}
+        <div className="absolute -top-10 -right-10 w-32 h-32 bg-green-100 rounded-full"></div>
+
+        <h3 className="text-2xl font-bold text-gray-800 mb-2">
+          Join Our Newsletter
+        </h3>
+        <p className="text-gray-500 mb-6">
+          No spam. Only freshness 🌱
+        </p>
+
+        <form className="space-y-5">
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            className="w-full px-5 py-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+          />
+
           <button
             type="submit"
-            className="bg-green-600 hover:bg-green-700 transition text-white font-semibold rounded-2xl px-6 py-2 flex items-center gap-2 justify-center"
+            className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-4 rounded-xl transition duration-300 shadow-lg"
           >
-            Subscribe
+            Subscribe Now
           </button>
         </form>
 
-        {/* Confirmation */}
-        {submitted && (
-          <p className="mt-4 text-green-600 font-semibold animate-pulse">
-            ✅ Thank you for subscribing!
-          </p>
-        )}
+        <p className="text-xs text-gray-400 mt-4 text-center">
+          We respect your privacy. Unsubscribe anytime.
+        </p>
       </div>
-    </section>
+
+    </div>
+  </div>
+</section>
+
   );
 };
 

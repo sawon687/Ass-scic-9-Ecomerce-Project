@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import SocialIcons from '../Sochialicon/SocialIcons';
 
 const Footer = () => {
     return (
@@ -17,16 +19,7 @@ const Footer = () => {
           </p>
 
           {/* Social Icons */}
-          <div className="flex gap-4 mt-6">
-            {["facebook", "twitter", "linkedin", "instagram", "youtube"].map((i) => (
-              <div
-                key={i}
-                className="w-10 h-10 flex items-center justify-center rounded-lg bg-green-800 hover:bg-green-600 transition cursor-pointer"
-              >
-                <i className={`fab fa-${i} text-white`} />
-              </div>
-            ))}
-          </div>
+         <SocialIcons></SocialIcons>
         </div>
 
         {/* Categories */}
@@ -69,10 +62,10 @@ const Footer = () => {
               📍 8502 Preston Rd. Inglewood, Maine 98380
             </li>
             <li className="flex gap-3">
-              📞 +(163)-2654-3564<br />+(163)-2654-5432
+              📞 +(088)01776079464<br />+(088)01776079464
             </li>
             <li className="flex gap-3">
-              ✉️ help24/7@frutin.com
+              ✉️ islamsawon367@gmail.com
             </li>
           </ul>
         </div>

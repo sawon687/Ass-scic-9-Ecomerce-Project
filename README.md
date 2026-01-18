@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+---
+
+# 🍓 Fruits Web Application
+
+## 📖 Project Description
+
+Fruits Web Application is a modern, responsive web app built with **Next.js** and **Tailwind CSS**.
+It allows users to browse fruits, see detailed information, and experience a clean UI.
+The app includes **mock authentication** and optional **toast notifications** on successful product creation.
+
+---
+
+## ⚙️ Setup & Installation
+
+1. **Clone the repository**
+
+```bash
+git clone <your-repository-link>
+cd fruits-web-app
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+```
+
+3. **Run the development server**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Open in browser**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛣️ Route Summary
 
-To learn more about Next.js, take a look at the following resources:
+| Route         | Description                           |
+| ------------- | ------------------------------------- |
+| `/`           | Home page with multiple sections      |
+| `/login`      | Login page (mock authentication)      |
+| `/register`   | User registration page (UI only)      |
+| `/items`      | Fruits listing page (protected route) |
+| `/items/[id]` | Single fruit details page             |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✅ Implemented Features
 
-## Deploy on Vercel
+* Responsive Home Page with multiple sections
+* Modern Login & Register UI
+* Mock Authentication with email & password
+* Protected Routes using cookies
+* Fruits Listing Page
+* Single Fruit Details Page
+* Organic Product Badge (**100% Organic**)
+* **Toast notification** on successful product creation (optional)
+* Clean UI using Tailwind CSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔍 Brief Explanation of Features
+
+### 🔐 Authentication
+
+* Mock login system using hardcoded credentials
+* Redirects unauthenticated users to `/login`
+* Simulates a logged-in session using cookies
+
+### 🍓 Fruits Listing & Details
+
+* Displays fruits with image, price, rating, stock
+* Clicking a fruit shows detailed information
+* Organic fruits are marked with a badge for easy identification
+
+### 🔔 Toast Notification
+
+* Appears after successful product creation
+* Provides instant feedback to the user
+
+### 🎨 UI & Design
+
+* Clean, modern, responsive layout
+* Tailwind CSS for fast styling
+* Card-based and grid layouts for products
+
+---
+
+## 📌 Notes
+
+This project is for learning and assignment purposes.
+Future improvements can include real authentication, database integration, admin dashboard, and search/filter functionality.
+
+---
+
